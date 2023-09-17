@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<BorderPane prefHeight="673.0" prefWidth="1326.0" style="-fx-background-color: #1b1c26;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.compgraphlab2.HelloController">
+    <center>
+            <StackPane>
+                <Pane fx:id="canvasK" >
+                </Pane>
+                <Pane fx:id="canvas0" >
+                </Pane>
+                <Pane>
+                    <Circle fx:id="pointSpinK" centerX="130.0" centerY="200.0" fill="RED" radius="10.0" />
+                    <Circle fx:id="pointSpin0" centerX="830.0" centerY="200.0" fill="BLUE" radius="10.0" />
+                </Pane>
+        </StackPane>
+    </center>
+    <center>
+    </center>
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #44495052;" BorderPane.alignment="CENTER">
+         <children>
+             <VBox layoutX="20.0" layoutY="20.0" spacing="20.0">
+                 <padding>
+                     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                 </padding>
+                 <HBox spacing="10.0">
+                     <Label text="Width K:" textFill="#ffffff" />
+                     <Slider fx:id="widthSliderK" max="1000" min="0" value="250" />
+                     <Label text="X Word K:" textFill="#ffffff" />
+                     <Slider max="10" min="0" value="1" fx:id="xWordSliderK" />
+                     <Label text="Y Word K:" textFill="#ffffff" />
+                     <Slider fx:id="yWordSliderK" max="10" min="0" value="1" />
+                 </HBox>
+                 <HBox spacing="10.0">
+                     <Label text="X:" textFill="#ffffff" />
+                     <Slider max="1500" min="0" value="50" fx:id="xPointK" />
+                     <Label text="Y:" textFill="#ffffff" />
+                     <Slider fx:id="yPointK" max="1000" min="0" value="250" />
+                 </HBox>
+                 <HBox spacing="10.0">
+                     <Label text="Width Line:" textFill="#ffffff" />
+                     <Slider fx:id="widthLineSliderK" max="30" min="0" value="6" />
+                     <Label text="Spin Angle:" textFill="#ffffff" />
+                     <Slider fx:id="spinPointSliderK" max="360" min="-360" value="0" />
+                 </HBox>
+                 <HBox spacing="10.0">
+                     <Label text="Fill Color:" textFill="#ffffff" />
+                     <ColorPicker fx:id="fillColorPickerK" />
+                     <Label text="Line Color:" textFill="#ffffff" />
+                     <ColorPicker fx:id="lineColorPickerK" />
+                     <Label text="Spin Color:" textFill="#ffffff" />
+                     <ColorPicker fx:id="spinColorPickerK" />
+                 </HBox>
+             </VBox>
+
+             <VBox layoutX="700.0" layoutY="20.0" spacing="20.0">
+                 <padding>
+                     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                 </padding>
+                 <HBox spacing="10.0">
+                     <Label text="Width 0:" textFill="#ffffff" />
+                     <Slider fx:id="widthSlider0" max="1000" min="0" value="250" />
+                     <Label text="X Word 0:" textFill="#ffffff" />
+                     <Slider max="10" min="0" value="1" fx:id="xWordSlider0" />
+                     <Label text="Y Word 0:" textFill="#ffffff" />
+                     <Slider fx:id="yWordSlider0" max="10" min="0" value="1" />
+                 </HBox>
+                 <HBox spacing="10.0">
+                     <Label text="X:" textFill="#ffffff" />
+                     <Slider max="1500" min="0" value="800" fx:id="xPoint0" />
+                     <Label text="Y:" textFill="#ffffff" />
+                     <Slider fx:id="yPoint0" max="1000" min="0" value="250" />
+                 </HBox>
+                 <HBox spacing="10.0">
+                     <Label text="Width Line:" textFill="#ffffff" />
+                     <Slider fx:id="widthLineSlider0" max="30" min="0" value="6" />
+                     <Label text="Spin Angle:" textFill="#ffffff" />
+                     <Slider fx:id="spinPointSlider0" max="360" min="-360" value="0" />
+                 </HBox>
+                 <HBox spacing="10.0">
+                     <Label text="Fill Color:" textFill="#ffffff" />
+                     <ColorPicker fx:id="fillColorPicker0" />
+                     <Label text="Line Color:" textFill="#ffffff" />
+                     <ColorPicker fx:id="lineColorPicker0" />
+                     <Label text="Spin Color:" textFill="#ffffff" />
+                     <ColorPicker fx:id="spinColorPicker0" />
+                 </HBox>
+             </VBox>
+
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

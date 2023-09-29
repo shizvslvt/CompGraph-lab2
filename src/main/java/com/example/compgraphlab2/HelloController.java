@@ -673,6 +673,14 @@ public class HelloController {
         redrawK();
         redrawY();
         redrawB();
+        redraw0();
+        redraw2();
+        redraw0_1();
+        redraw6();
+        redraw2_1();
+        redraw0_2();
+        redraw0_3();
+        redraw4();
 
     }
     private void drawPoint(double x1, double y1, double x2, double y2, int wL, Color lineColor, Pane canvas) {
